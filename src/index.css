@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    @apply mx-auto w-full px-10 max-w-[1300px];
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    flex-shrink: 0;
+  }
+  
+  
+  #root {
+    @apply flex flex-col h-full;
+  }
+}
